@@ -56,3 +56,5 @@ image: https://hub.docker.com/repository/docker/szczuras7/ebiz-zad2/general
 ✅ 5.0 Należy dodać konfigurację CORS dla dwóch hostów dla metod CRUD
 
 https://github.com/siemamen7/ebiz-zad2/commit/c96ead9c9e46b0213642ad5f7ac9eb81f580768f
+
+WIDEO: https://github.com/siemamen7/ebiz-zad2/blob/71f1b2e4f95201586be4ab8cd9036ad45f2f95f0/nagranie-ebiz2.mp4
