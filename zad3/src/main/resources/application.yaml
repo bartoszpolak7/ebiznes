@@ -1,0 +1,9 @@
+ktor:
+  application:
+    modules:
+      - io.github.siemamen7.ApplicationKt.module
+  deployment:
+    port: 8080
+
+discord:
+  token: ${DISCORD_TOKEN}

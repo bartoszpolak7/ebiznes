@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Discord Sender</title>
+</head>
+<body>
+
+<h2>Send a message to Discord</h2>
+
+<label for="message">Message:</label>
+<input type="text" id="message" placeholder="Enter message">
+<button onclick="sendMessage()">Send</button>
+<pre id="config"></pre>
+
+<script>
+    async function sendMessage() {
+        const message = document.getElementById("message").value;
+
+        await fetch("/webhook/send", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify({ message })
+        });
+
+        alert("Message sent!");
+    }
+
+    document.addEventListener("DOMContentLoaded", async () => {
+        const response = await fetch("/webhook/config");
+        document.getElementById("config").textContent = await response.text();
+    });
+</script>
+
+</body>
+</html>
