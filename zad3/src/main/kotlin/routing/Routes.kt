@@ -4,6 +4,7 @@ import io.ktor.server.request.*
 import io.ktor.server.response.*
 import io.ktor.server.routing.*
 import io.github.siemamen7.service.WebhookService
+import io.github.siemamen7.service.BotService
 
 import kotlinx.serialization.Serializable
 
@@ -12,7 +13,7 @@ data class MessageRequest(
     val message: String
 )
 
-fun Route.webhookRoutes() {
+fun Route.routes() {
 
     post("/webhook/send") {
 
@@ -35,5 +36,9 @@ fun Route.webhookRoutes() {
 
     get("/webhook/config") {
         call.respondText("Webhook URL: ${System.getenv("DISCORD_WEBHOOK_URL")}")
+    }
+
+    get("/bot/messages") {
+        call.respond(BotService.messages)
     }
 }

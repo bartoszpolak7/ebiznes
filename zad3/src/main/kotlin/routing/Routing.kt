@@ -11,7 +11,7 @@ fun Application.configureRouting() {
         json()
     }
     routing {
-        webhookRoutes()
+        routes()
         staticResources("/", "static")
     }
 }

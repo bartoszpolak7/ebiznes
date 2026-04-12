@@ -12,6 +12,9 @@
 <button onclick="sendMessage()">Send</button>
 <pre id="config"></pre>
 
+<h2>Messages from Discord</h2>
+<ul id="messages"></ul>
+
 <script>
     async function sendMessage() {
         const message = document.getElementById("message").value;
@@ -27,9 +30,20 @@
         alert("Message sent!");
     }
 
+    async function loadMessages() {
+        const response = await fetch("/bot/messages");
+        const messages = await response.json();
+        const list = document.getElementById("messages");
+        list.innerHTML = messages.map(m =>
+            `<li><strong>${m.author}</strong> in #${m.channel}: ${m.content}</li>`
+        ).join("");
+    }
+
     document.addEventListener("DOMContentLoaded", async () => {
         const response = await fetch("/webhook/config");
         document.getElementById("config").textContent = await response.text();
+        await loadMessages();
+        setInterval(loadMessages, 5000);
     });
 </script>
 
