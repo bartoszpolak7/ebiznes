@@ -61,12 +61,18 @@ WIDEO: https://github.com/siemamen7/ebiz-zad2/blob/71f1b2e4f95201586be4ab8cd9036
 
 # Zadanie 3
 
-✅ 3.0 Należy stworzyć aplikację kliencką w Kotlinie we frameworku Ktor, która pozwala na przesyłanie wiadomości na platformę Discord\n
+✅ 3.0 Należy stworzyć aplikację kliencką w Kotlinie we frameworku Ktor, która pozwala na przesyłanie wiadomości na platformę Discord
+
 ✅ 3.5 Aplikacja jest w stanie odbierać wiadomości użytkowników z platformy Discord skierowane do aplikacji (bota)
+
 ✅ 4.0 Zwróci listę kategorii na określone żądanie użytkownika
+
 ✅ 4.5 Zwróci listę produktów wg żądanej kategorii
+
 ❌ 5.0 Aplikacja obsłuży dodatkowo jedną z platform: Slack lub Messenger
 
 kod: https://github.com/siemamen7/ebiznes/tree/main/zad3
+
 obraz: https://hub.docker.com/repository/docker/szczuras7/ebiz3/general
+
 wideo: https://github.com/siemamen7/ebiznes/blob/main/zad3/Nagrywanie%20ekranu%202026-04-14%20202514%20(720p).mp4 
