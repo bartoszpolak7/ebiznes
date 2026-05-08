@@ -76,3 +76,21 @@ kod: https://github.com/siemamen7/ebiznes/tree/main/zad3
 obraz: https://hub.docker.com/repository/docker/szczuras7/ebiz3/general
 
 wideo: https://github.com/siemamen7/ebiznes/blob/main/zad3/Nagrywanie%20ekranu%202026-04-14%20202514%20(720p).mp4 
+
+# Zadanie 4 ✅✅✅ WSZYSTKO JEST ✅✅✅
+3.0 Należy stworzyć aplikację we frameworki echo w j. Go, która będzie
+miała kontroler Produktów zgodny z CRUD
+
+3.5 Należy stworzyć model Produktów wykorzystując gorm oraz
+wykorzystać model do obsługi produktów (CRUD) w kontrolerze (zamiast
+listy)
+
+4.0 Należy dodać model Koszyka oraz dodać odpowiedni endpoint
+
+4.5 Należy stworzyć model kategorii i dodać relację między kategorią,
+a produktem
+
+5.0 pogrupować zapytania w gorm’owe scope'y
+
+kod: https://github.com/siemamen7/ebiznes/tree/main/zad4
+wideo: https://github.com/siemamen7/ebiznes/blob/main/zad4/Nagrywanie%20ekranu%202026-05-08%20195156%20(720p).mp4
