@@ -1,0 +1,47 @@
+Index: ../zad4/database/migrate.go
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package database\r\n\r\nimport (\r\n\t\"zad4/models\"\r\n\r\n\t\"gorm.io/gorm\"\r\n)\r\n\r\nfunc Migrate(db *gorm.DB) error {\r\n\treturn db.AutoMigrate(\r\n\t\t&models.Category{},\r\n\t\t&models.Product{},\r\n\t\t&models.Cart{},\r\n\t\t&models.CartItem{},\r\n\t)\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/../zad4/database/migrate.go b/../zad4/database/migrate.go
+--- a/../zad4/database/migrate.go	(revision aa8fd866de60dd8e1a0606da057963a252d5627a)
++++ b/../zad4/database/migrate.go	(date 1779315655716)
+@@ -7,6 +7,7 @@
+ )
+ 
+ func Migrate(db *gorm.DB) error {
++
+ 	return db.AutoMigrate(
+ 		&models.Category{},
+ 		&models.Product{},
+Index: backend/Dockerfile
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/backend/Dockerfile b/backend/Dockerfile
+new file mode 100644
+--- /dev/null	(date 1779813269902)
++++ b/backend/Dockerfile	(date 1779813269902)
+@@ -0,0 +1,18 @@
++FROM eclipse-temurin:24-jdk-alpine AS builder
++WORKDIR /app
++
++COPY gradlew .
++COPY gradle ./gradle
++COPY build.gradle.kts settings.gradle.kts gradlew ./
++
++RUN chmod +x ./gradlew
++RUN ./gradlew dependencies --no-daemon
++
++COPY src ./src
++RUN ./gradlew clean build -x test
++
++FROM eclipse-temurin:24-jre-alpine
++WORKDIR /app
++COPY --from=builder /app/build/libs/*.jar app.jar
++EXPOSE 8080
++ENTRYPOINT ["java", "-jar", "app.jar"]
+\ No newline at end of file
