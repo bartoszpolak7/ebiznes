@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="io.github.siemamen7.zad6.ShopE2ETest" tests="20" skipped="20" failures="0" errors="0" timestamp="2026-05-27T00:46:00.563Z" hostname="LENOVO" time="0.216">
+  <properties/>
+  <testcase name="test07_addSameProductTwiceShowsQuantityTwo()" classname="io.github.siemamen7.zad6.ShopE2ETest" time="0.069">
+    <skipped message="org.opentest4j.TestAbortedException: Assumption failed: Missing BROWSERSTACK_USERNAME" type="org.opentest4j.TestAbortedException">org.opentest4j.TestAbortedException: Assumption failed: Missing BROWSERSTACK_USERNAME
+	at io.github.siemamen7.zad6.BrowserStackE2EBase.requireBrowserStackEnv(BrowserStackE2EBase.kt:156)
+	at io.github.siemamen7.zad6.BrowserStackE2EBase.setUp(BrowserStackE2EBase.kt:71)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+</skipped>
+  </testcase>
+  <testcase name="test05_goToCartNavigatesToCartPage()" classname="io.github.siemamen7.zad6.ShopE2ETest" time="0.004">
+    <skipped message="org.opentest4j.TestAbortedException: Assumption failed: Missing BROWSERSTACK_USERNAME" type="org.opentest4j.TestAbortedException">org.opentest4j.TestAbortedException: Assumption failed: Missing BROWSERSTACK_USERNAME
+	at io.github.siemamen7.zad6.BrowserStackE2EBase.requireBrowserStackEnv(BrowserStackE2EBase.kt:156)
+	at io.github.siemamen7.zad6.BrowserStackE2EBase.setUp(BrowserStackE2EBase.kt:71)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+</skipped>
+  </testcase>
+  <testcase name="test02_productsPageShowsThreeProducts()" classname="io.github.siemamen7.zad6.ShopE2ETest" time="0.003">
+    <skipped message="org.opentest4j.TestAbortedException: Assumption failed: Missing BROWSERSTACK_USERNAME" type="org.opentest4j.TestAbortedException">org.opentest4j.TestAbortedException: Assumption failed: Missing BROWSERSTACK_USERNAME
+	at io.github.siemamen7.zad6.BrowserStackE2EBase.requireBrowserStackEnv(BrowserStackE2EBase.kt:156)
+	at io.github.siemamen7.zad6.BrowserStackE2EBase.setUp(BrowserStackE2EBase.kt:71)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+</skipped>
+  </testcase>
+  <testcase name="test14_emptyCartShowsZeroTotal()" classname="io.github.siemamen7.zad6.ShopE2ETest" time="0.005">
+    <skipped message="org.opentest4j.TestAbortedException: Assumption failed: Missing BROWSERSTACK_USERNAME" type="org.opentest4j.TestAbortedException">org.opentest4j.TestAbortedException: Assumption failed: Missing BROWSERSTACK_USERNAME
+	at io.github.siemamen7.zad6.BrowserStackE2EBase.requireBrowserStackEnv(BrowserStackE2EBase.kt:156)
+	at io.github.siemamen7.zad6.BrowserStackE2EBase.setUp(BrowserStackE2EBase.kt:71)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+</skipped>
+  </testcase>
+  <testcase name="test11_quantityLabelContainsNumericValue()" classname="io.github.siemamen7.zad6.ShopE2ETest" time="0.003">
+    <skipped message="org.opentest4j.TestAbortedException: Assumption failed: Missing BROWSERSTACK_USERNAME" type="org.opentest4j.TestAbortedException">org.opentest4j.TestAbortedException: Assumption failed: Missing BROWSERSTACK_USERNAME
+	at io.github.siemamen7.zad6.BrowserStackE2EBase.requireBrowserStackEnv(BrowserStackE2EBase.kt:156)
+	at io.github.siemamen7.zad6.BrowserStackE2EBase.setUp(BrowserStackE2EBase.kt:71)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+</skipped>
+  </testcase>
+  <testcase name="test08_addTwoDifferentProductsShowsBothInCart()" classname="io.github.siemamen7.zad6.ShopE2ETest" time="0.002">
+    <skipped message="org.opentest4j.TestAbortedException: Assumption failed: Missing BROWSERSTACK_USERNAME" type="org.opentest4j.TestAbortedException">org.opentest4j.TestAbortedException: Assumption failed: Missing BROWSERSTACK_USERNAME
+	at io.github.siemamen7.zad6.BrowserStackE2EBase.requireBrowserStackEnv(BrowserStackE2EBase.kt:156)
+	at io.github.siemamen7.zad6.BrowserStackE2EBase.setUp(BrowserStackE2EBase.kt:71)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+</skipped>
+  </testcase>
+  <testcase name="test20_fullCheckoutFlowFromProductsToPayment()" classname="io.github.siemamen7.zad6.ShopE2ETest" time="0.002">
+    <skipped message="org.opentest4j.TestAbortedException: Assumption failed: Missing BROWSERSTACK_USERNAME" type="org.opentest4j.TestAbortedException">org.opentest4j.TestAbortedException: Assumption failed: Missing BROWSERSTACK_USERNAME
+	at io.github.siemamen7.zad6.BrowserStackE2EBase.requireBrowserStackEnv(BrowserStackE2EBase.kt:156)
+	at io.github.siemamen7.zad6.BrowserStackE2EBase.setUp(BrowserStackE2EBase.kt:71)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+</skipped>
+  </testcase>
+  <testcase name="test18_payNowShowsSuccessAlert()" classname="io.github.siemamen7.zad6.ShopE2ETest" time="0.002">
+    <skipped message="org.opentest4j.TestAbortedException: Assumption failed: Missing BROWSERSTACK_USERNAME" type="org.opentest4j.TestAbortedException">org.opentest4j.TestAbortedException: Assumption failed: Missing BROWSERSTACK_USERNAME
+	at io.github.siemamen7.zad6.BrowserStackE2EBase.requireBrowserStackEnv(BrowserStackE2EBase.kt:156)
+	at io.github.siemamen7.zad6.BrowserStackE2EBase.setUp(BrowserStackE2EBase.kt:71)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+</skipped>
+  </testcase>
+  <testcase name="test13_backToProductsNavigatesToHome()" classname="io.github.siemamen7.zad6.ShopE2ETest" time="0.002">
+    <skipped message="org.opentest4j.TestAbortedException: Assumption failed: Missing BROWSERSTACK_USERNAME" type="org.opentest4j.TestAbortedException">org.opentest4j.TestAbortedException: Assumption failed: Missing BROWSERSTACK_USERNAME
+	at io.github.siemamen7.zad6.BrowserStackE2EBase.requireBrowserStackEnv(BrowserStackE2EBase.kt:156)
+	at io.github.siemamen7.zad6.BrowserStackE2EBase.setUp(BrowserStackE2EBase.kt:71)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+</skipped>
+  </testcase>
+  <testcase name="test19_cartClearedAfterSuccessfulPayment()" classname="io.github.siemamen7.zad6.ShopE2ETest" time="0.003">
+    <skipped message="org.opentest4j.TestAbortedException: Assumption failed: Missing BROWSERSTACK_USERNAME" type="org.opentest4j.TestAbortedException">org.opentest4j.TestAbortedException: Assumption failed: Missing BROWSERSTACK_USERNAME
+	at io.github.siemamen7.zad6.BrowserStackE2EBase.requireBrowserStackEnv(BrowserStackE2EBase.kt:156)
+	at io.github.siemamen7.zad6.BrowserStackE2EBase.setUp(BrowserStackE2EBase.kt:71)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+</skipped>
+  </testcase>
+  <testcase name="test09_cartPageShowsHeadingAndItems()" classname="io.github.siemamen7.zad6.ShopE2ETest" time="0.003">
+    <skipped message="org.opentest4j.TestAbortedException: Assumption failed: Missing BROWSERSTACK_USERNAME" type="org.opentest4j.TestAbortedException">org.opentest4j.TestAbortedException: Assumption failed: Missing BROWSERSTACK_USERNAME
+	at io.github.siemamen7.zad6.BrowserStackE2EBase.requireBrowserStackEnv(BrowserStackE2EBase.kt:156)
+	at io.github.siemamen7.zad6.BrowserStackE2EBase.setUp(BrowserStackE2EBase.kt:71)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+</skipped>
+  </testcase>
+  <testcase name="test03_eachProductShowsNameAndPrice()" classname="io.github.siemamen7.zad6.ShopE2ETest" time="0.002">
+    <skipped message="org.opentest4j.TestAbortedException: Assumption failed: Missing BROWSERSTACK_USERNAME" type="org.opentest4j.TestAbortedException">org.opentest4j.TestAbortedException: Assumption failed: Missing BROWSERSTACK_USERNAME
+	at io.github.siemamen7.zad6.BrowserStackE2EBase.requireBrowserStackEnv(BrowserStackE2EBase.kt:156)
+	at io.github.siemamen7.zad6.BrowserStackE2EBase.setUp(BrowserStackE2EBase.kt:71)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+</skipped>
+  </testcase>
+  <testcase name="test16_payNowDisabledForEmptyCart()" classname="io.github.siemamen7.zad6.ShopE2ETest" time="0.003">
+    <skipped message="org.opentest4j.TestAbortedException: Assumption failed: Missing BROWSERSTACK_USERNAME" type="org.opentest4j.TestAbortedException">org.opentest4j.TestAbortedException: Assumption failed: Missing BROWSERSTACK_USERNAME
+	at io.github.siemamen7.zad6.BrowserStackE2EBase.requireBrowserStackEnv(BrowserStackE2EBase.kt:156)
+	at io.github.siemamen7.zad6.BrowserStackE2EBase.setUp(BrowserStackE2EBase.kt:71)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+</skipped>
+  </testcase>
+  <testcase name="test15_cartTotalMatchesPaymentTotal()" classname="io.github.siemamen7.zad6.ShopE2ETest" time="0.003">
+    <skipped message="org.opentest4j.TestAbortedException: Assumption failed: Missing BROWSERSTACK_USERNAME" type="org.opentest4j.TestAbortedException">org.opentest4j.TestAbortedException: Assumption failed: Missing BROWSERSTACK_USERNAME
+	at io.github.siemamen7.zad6.BrowserStackE2EBase.requireBrowserStackEnv(BrowserStackE2EBase.kt:156)
+	at io.github.siemamen7.zad6.BrowserStackE2EBase.setUp(BrowserStackE2EBase.kt:71)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+</skipped>
+  </testcase>
+  <testcase name="test17_payNowEnabledWhenCartHasItems()" classname="io.github.siemamen7.zad6.ShopE2ETest" time="0.002">
+    <skipped message="org.opentest4j.TestAbortedException: Assumption failed: Missing BROWSERSTACK_USERNAME" type="org.opentest4j.TestAbortedException">org.opentest4j.TestAbortedException: Assumption failed: Missing BROWSERSTACK_USERNAME
+	at io.github.siemamen7.zad6.BrowserStackE2EBase.requireBrowserStackEnv(BrowserStackE2EBase.kt:156)
+	at io.github.siemamen7.zad6.BrowserStackE2EBase.setUp(BrowserStackE2EBase.kt:71)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+</skipped>
+  </testcase>
+  <testcase name="test01_productsPageLoadsWithHeading()" classname="io.github.siemamen7.zad6.ShopE2ETest" time="0.002">
+    <skipped message="org.opentest4j.TestAbortedException: Assumption failed: Missing BROWSERSTACK_USERNAME" type="org.opentest4j.TestAbortedException">org.opentest4j.TestAbortedException: Assumption failed: Missing BROWSERSTACK_USERNAME
+	at io.github.siemamen7.zad6.BrowserStackE2EBase.requireBrowserStackEnv(BrowserStackE2EBase.kt:156)
+	at io.github.siemamen7.zad6.BrowserStackE2EBase.setUp(BrowserStackE2EBase.kt:71)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+</skipped>
+  </testcase>
+  <testcase name="test04_eachProductHasAddToCartButton()" classname="io.github.siemamen7.zad6.ShopE2ETest" time="0.003">
+    <skipped message="org.opentest4j.TestAbortedException: Assumption failed: Missing BROWSERSTACK_USERNAME" type="org.opentest4j.TestAbortedException">org.opentest4j.TestAbortedException: Assumption failed: Missing BROWSERSTACK_USERNAME
+	at io.github.siemamen7.zad6.BrowserStackE2EBase.requireBrowserStackEnv(BrowserStackE2EBase.kt:156)
+	at io.github.siemamen7.zad6.BrowserStackE2EBase.setUp(BrowserStackE2EBase.kt:71)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+</skipped>
+  </testcase>
+  <testcase name="test10_cartTotalMatchesAddedProducts()" classname="io.github.siemamen7.zad6.ShopE2ETest" time="0.003">
+    <skipped message="org.opentest4j.TestAbortedException: Assumption failed: Missing BROWSERSTACK_USERNAME" type="org.opentest4j.TestAbortedException">org.opentest4j.TestAbortedException: Assumption failed: Missing BROWSERSTACK_USERNAME
+	at io.github.siemamen7.zad6.BrowserStackE2EBase.requireBrowserStackEnv(BrowserStackE2EBase.kt:156)
+	at io.github.siemamen7.zad6.BrowserStackE2EBase.setUp(BrowserStackE2EBase.kt:71)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+</skipped>
+  </testcase>
+  <testcase name="test12_paymentLinkNavigatesToPaymentPage()" classname="io.github.siemamen7.zad6.ShopE2ETest" time="0.003">
+    <skipped message="org.opentest4j.TestAbortedException: Assumption failed: Missing BROWSERSTACK_USERNAME" type="org.opentest4j.TestAbortedException">org.opentest4j.TestAbortedException: Assumption failed: Missing BROWSERSTACK_USERNAME
+	at io.github.siemamen7.zad6.BrowserStackE2EBase.requireBrowserStackEnv(BrowserStackE2EBase.kt:156)
+	at io.github.siemamen7.zad6.BrowserStackE2EBase.setUp(BrowserStackE2EBase.kt:71)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+</skipped>
+  </testcase>
+  <testcase name="test06_addSingleProductShowsQuantityOne()" classname="io.github.siemamen7.zad6.ShopE2ETest" time="0.002">
+    <skipped message="org.opentest4j.TestAbortedException: Assumption failed: Missing BROWSERSTACK_USERNAME" type="org.opentest4j.TestAbortedException">org.opentest4j.TestAbortedException: Assumption failed: Missing BROWSERSTACK_USERNAME
+	at io.github.siemamen7.zad6.BrowserStackE2EBase.requireBrowserStackEnv(BrowserStackE2EBase.kt:156)
+	at io.github.siemamen7.zad6.BrowserStackE2EBase.setUp(BrowserStackE2EBase.kt:71)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+</skipped>
+  </testcase>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
