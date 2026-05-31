@@ -24,6 +24,7 @@ dependencies {
 
     testImplementation("org.junit.jupiter:junit-jupiter:5.11.4")
     testRuntimeOnly("org.junit.platform:junit-platform-launcher")
+    testImplementation("com.browserstack:browserstack-java-sdk:latest.release")
 }
 
 tasks.withType<Test> {
@@ -31,4 +32,13 @@ tasks.withType<Test> {
     testLogging {
         events("passed", "skipped", "failed")
     }
+    val sdkJarFile by lazy {
+        configurations.detachedConfiguration(
+            dependencies.create("com.browserstack:browserstack-java-sdk:latest.release")
+        ).singleFile
+    }
+    doFirst {
+        println("BrowserStack SDK jar: $sdkJarFile")
+    }
+    jvmArgs("-javaagent:$sdkJarFile")
 }

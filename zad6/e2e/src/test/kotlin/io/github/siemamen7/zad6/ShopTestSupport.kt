@@ -10,7 +10,7 @@ import java.time.Duration
 class ShopTestSupport(private val driver: WebDriver) {
     val frontendUrl: String =
         System.getenv("ZAD6_FRONTEND_URL")
-            ?: System.getenv("ZAD5_FRONTEND_URL")
+            ?: System.getenv("ZAD6_FRONTEND_URL")
             ?: "http://localhost:5173"
 
     private fun wait(): WebDriverWait = WebDriverWait(driver, Duration.ofSeconds(15))

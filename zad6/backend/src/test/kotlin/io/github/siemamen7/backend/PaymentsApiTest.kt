@@ -2,10 +2,11 @@ package io.github.siemamen7.backend
 
 import org.junit.jupiter.api.Assertions.assertEquals
 import org.junit.jupiter.api.Test
+import org.junit.jupiter.api.assertNotNull
 import org.springframework.beans.factory.annotation.Autowired
-import org.springframework.boot.test.autoconfigure.web.client.AutoConfigureTestRestTemplate
 import org.springframework.boot.test.context.SpringBootTest
 import org.springframework.boot.resttestclient.TestRestTemplate
+import org.springframework.boot.resttestclient.autoconfigure.AutoConfigureTestRestTemplate
 import org.springframework.http.HttpEntity
 import org.springframework.http.HttpHeaders
 import org.springframework.http.HttpStatus
@@ -17,6 +18,14 @@ class PaymentsApiTest {
 
     @Autowired
     private lateinit var restTemplate: TestRestTemplate
+
+    @Test
+    fun postPaymentResponseIsNotNull() {
+        val response = postPayment("""{"total": 29.99}""")
+
+        assertNotNull(response)
+        assertNotNull(response.statusCode)
+    }
 
     @Test
     fun postPaymentsWithValidTotalReturnsOk() {
@@ -47,7 +56,7 @@ class PaymentsApiTest {
         val response = postPayment("""{}""")
 
         assertEquals(HttpStatus.BAD_REQUEST, response.statusCode)
-        assertEquals("error", response.body?.get("status"))
+        assertEquals(400, response.body?.get("status"))
     }
 
     private fun postPayment(body: String) =

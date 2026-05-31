@@ -1,7 +1,7 @@
 services:
   backend:
     build: ./backend
-    image: szczuras7/ebiz5-backend
+    image: szczuras7/ebiz6-backend
 
     ports:
       - "8080:8080"
@@ -12,4 +12,6 @@ services:
       - "5173:5173"
     depends_on:
       - backend
-    image: szczuras7/ebiz5-frontend
+    image: szczuras7/ebiz6-frontend
+
+
