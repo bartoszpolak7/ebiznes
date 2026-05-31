@@ -93,4 +93,19 @@ a produktem
 5.0 pogrupować zapytania w gorm’owe scope'y
 
 kod: https://github.com/siemamen7/ebiznes/tree/main/zad4
+
 wideo: https://github.com/siemamen7/ebiznes/blob/main/zad4/Nagrywanie%20ekranu%202026-05-08%20195156%20(720p).mp4
+
+# Zadanie 5 ✅✅✅ WSZYSTKO JEST ✅✅✅
+
+Kod: https://github.com/bartoszpolak7/ebiznes/tree/main/zad5
+
+Wideo: https://github.com/bartoszpolak7/ebiznes/blob/main/zad5/Nagrywanie%20ekranu%202026-05-26%20184841%20(720p).mp4
+
+# Zadanie 6 ✅✅✅ WSZYSTKO JEST ✅✅✅
+
+kod: https://github.com/bartoszpolak7/ebiznes/tree/main/zad6
+
+wideo: https://github.com/bartoszpolak7/ebiznes/blob/main/zad6/2026-05-31%2020-58-58.mp4
+
+
