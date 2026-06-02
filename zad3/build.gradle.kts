@@ -10,6 +10,12 @@ plugins {
     id("application")
 }
 
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(21) // change 25 → 21
+    }
+}
+
 group = "io.github.siemamen7"
 version = "0.0.1"
 
