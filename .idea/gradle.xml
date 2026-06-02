@@ -29,6 +29,14 @@
           </set>
         </option>
       </GradleProjectSettings>
+      <GradleProjectSettings>
+        <option name="externalProjectPath" value="$PROJECT_DIR$/zad7-server" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/zad7-server" />
+          </set>
+        </option>
+      </GradleProjectSettings>
     </option>
   </component>
 </project>
