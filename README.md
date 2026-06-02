@@ -108,4 +108,11 @@ kod: https://github.com/bartoszpolak7/ebiznes/tree/main/zad6
 
 wideo: https://github.com/bartoszpolak7/ebiznes/blob/main/zad6/2026-05-31%2020-58-58.mp4
 
+# Zadanie 7 ✅✅✅ WSZYSTKO JEST ✅✅✅
+
+kod serwera: https://github.com/bartoszpolak7/ebiz-zad7-server/tree/8b2639d8edefe617f781e6c618b6b8cacafc9f5e
+
+kod klienta: https://github.com/bartoszpolak7/ebiz-zad7-client/tree/c9c23adc2120f3861da90f04d267c87019e9eafe
+
+wideo: https://github.com/bartoszpolak7/ebiznes/blob/main/zad7/2026-06-02%2004-35-15.mp4
 
