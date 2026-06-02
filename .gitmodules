@@ -1,9 +1,6 @@
 [submodule "zad2"]
 	path = zad2
 	url = https://github.com/siemamen7/ebiz-zad2.git
-[submodule "zad7-client"]
-	path = zad7-client
-	url = https://github.com/bartoszpolak7/ebiz-zad7-client.git
-[submodule "zad7-server"]
-	path = zad7-server
+[submodule "zad6/backend"]
+	path = zad6/backend
 	url = https://github.com/bartoszpolak7/ebiz-zad7-server.git
