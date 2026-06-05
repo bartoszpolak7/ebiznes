@@ -116,3 +116,11 @@ kod klienta: https://github.com/bartoszpolak7/ebiz-zad7-client/tree/c9c23adc2120
 
 wideo: https://github.com/bartoszpolak7/ebiznes/blob/main/zad7/2026-06-02%2004-35-15.mp4
 
+# Zadanie 8 ✅✅✅ WSZYSTKO JEST ✅✅✅
+
+kod serwera: https://github.com/bartoszpolak7/ebiznes/tree/main/zad6/backend
+
+kod klienta: https://github.com/bartoszpolak7/ebiznes/tree/main/zad6/frontend
+
+wideo: https://github.com/bartoszpolak7/ebiznes/blob/main/zad8/Nagrywanie%20ekranu%202026-06-05%20024933%20(720p).mp4
+
