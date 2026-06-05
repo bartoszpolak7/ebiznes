@@ -20,15 +20,8 @@ fun Route.routes() {
         // Receive JSON body
         val request = call.receive<MessageRequest>()
 
-        // Get webhook URL from environment variable
-        val webhookUrl = System.getenv("DISCORD_WEBHOOK_URL")
-            ?: error("DISCORD_WEBHOOK_URL not set")
-
         // Call service
-        WebhookService.sendMessage(
-            content = request.message,
-            webhookUrl = webhookUrl
-        )
+        WebhookService.sendMessage(content = request.message)
 
         // Respond to client
         call.respondText("Message sent to Discord")

@@ -1,4 +1,4 @@
-# zad3
+# zad3 - bot Discord
 
 This project was created using the [Ktor Project Generator](https://start.ktor.io).
 
@@ -14,7 +14,7 @@ Here are some useful links to get you started:
 Here's a list of features included in this project:
 
 | Name                                               | Description                                                 |
-|----------------------------------------------------|-------------------------------------------------------------|
+| -------------------------------------------------- | ----------------------------------------------------------- |
 | [Routing](https://start.ktor.io/p/routing-default) | Allows to define structured routes and associated handlers. |
 
 ## Building & Running
@@ -22,7 +22,7 @@ Here's a list of features included in this project:
 To build or run the project, use one of the following tasks:
 
 | Task                                    | Description                                                          |
-|-----------------------------------------|----------------------------------------------------------------------|
+| --------------------------------------- | -------------------------------------------------------------------- |
 | `./gradlew test`                        | Run the tests                                                        |
 | `./gradlew build`                       | Build everything                                                     |
 | `./gradlew buildFatJar`                 | Build an executable JAR of the server with all dependencies included |
@@ -37,4 +37,3 @@ If the server starts successfully, you'll see the following output:
 2024-12-04 14:32:45.584 [main] INFO  Application - Application started in 0.303 seconds.
 2024-12-04 14:32:45.682 [main] INFO  Application - Responding at http://0.0.0.0:8080
 ```
-

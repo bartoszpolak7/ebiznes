@@ -8,6 +8,9 @@
       <module name="ebiznes.backend" target="21" />
       <module name="ebiznes.backend.main" target="21" />
       <module name="ebiznes.backend.test" target="21" />
+      <module name="zad3(discord_bot)" target="25" />
+      <module name="zad3(discord_bot).main" target="25" />
+      <module name="zad3(discord_bot).test" target="25" />
       <module name="zad7-server.backend" target="21" />
       <module name="zad7-server.backend.main" target="21" />
       <module name="zad7-server.backend.test" target="21" />

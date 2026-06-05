@@ -18,8 +18,11 @@ object WebhookService {
             json()
         }
     }
+    // Get webhook URL from environment variable
+    val webhookUrl = System.getenv("DISCORD_WEBHOOK_URL")
+        ?: error("DISCORD_WEBHOOK_URL not set")
 
-    suspend fun sendMessage(content: String, webhookUrl: String) {
+    suspend fun sendMessage(content: String) {
         client.post(webhookUrl) {
             contentType(ContentType.Application.Json)
             setBody(DiscordMessage(content))

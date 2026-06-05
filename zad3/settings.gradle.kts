@@ -1,4 +1,4 @@
-rootProject.name = "zad3"
+rootProject.name = "discord_bot"
 
 dependencyResolutionManagement {
     repositories {
