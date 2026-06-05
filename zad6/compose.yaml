@@ -1,7 +1,24 @@
 services:
+
+  db:
+    image: postgres:18-alpine
+    environment:
+      POSTGRES_USER: admin
+      POSTGRES_PASSWORD: password
+      POSTGRES_DB: ebiznes
+    ports:
+      - "5432:5432"
+    volumes:
+      - db_data:/var/lib/postgresql
+    
   backend:
+    depends_on:
+      - db
     build: ./backend
     image: szczuras7/ebiz6-backend
+    environment:
+      SPRING_PROFILES_ACTIVE: docker
+
 
     ports:
       - "8080:8080"
@@ -14,4 +31,9 @@ services:
       - backend
     image: szczuras7/ebiz6-frontend
 
+    volumes: 
+      - ./frontend:/app
+      - /app/node_modules
 
+volumes:
+  db_data:

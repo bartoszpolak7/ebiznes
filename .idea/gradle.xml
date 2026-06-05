@@ -4,14 +4,6 @@
   <component name="GradleSettings">
     <option name="linkedExternalProjectsSettings">
       <GradleProjectSettings>
-        <option name="externalProjectPath" value="$PROJECT_DIR$/zad5/backend" />
-        <option name="modules">
-          <set>
-            <option value="$PROJECT_DIR$/zad5/backend" />
-          </set>
-        </option>
-      </GradleProjectSettings>
-      <GradleProjectSettings>
         <option name="externalProjectPath" value="$PROJECT_DIR$/zad6/backend" />
         <option name="gradleJvm" value="26" />
         <option name="modules">

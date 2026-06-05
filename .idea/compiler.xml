@@ -2,6 +2,12 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <bytecodeTargetLevel>
+      <module name="backend" target="21" />
+      <module name="backend.main" target="21" />
+      <module name="backend.test" target="21" />
+      <module name="ebiznes.backend" target="21" />
+      <module name="ebiznes.backend.main" target="21" />
+      <module name="ebiznes.backend.test" target="21" />
       <module name="zad7-server.backend" target="21" />
       <module name="zad7-server.backend.main" target="21" />
       <module name="zad7-server.backend.test" target="21" />
@@ -12,6 +18,9 @@
       <module name="backend" options="-parameters" />
       <module name="backend.main" options="-parameters" />
       <module name="backend.test" options="-parameters" />
+      <module name="ebiznes.backend" options="-parameters" />
+      <module name="ebiznes.backend.main" options="-parameters" />
+      <module name="ebiznes.backend.test" options="-parameters" />
       <module name="io.github.siemamen7.backend" options="-parameters" />
       <module name="io.github.siemamen7.backend.main" options="-parameters" />
       <module name="io.github.siemamen7.backend.test" options="-parameters" />
