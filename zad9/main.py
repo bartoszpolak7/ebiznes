@@ -1,8 +1,11 @@
+import os
 from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 import ollama
 from pydantic import BaseModel
 import random
+
+client = ollama.Client(host=os.getenv("OLLAMA_HOST", "http://localhost:11434"))
 
 MODEL = "llama3.2:3b"
 
@@ -36,19 +39,10 @@ def build_system_prompt(products: list[str], categories: list[str]) -> str:
         Dostępne produkty:
         {product_context}
 
-        
-
         Oprócz tego możesz prowadzić kowersacje związane z fantasy, role play.
         Możesz opowiadać o plotkach z okolicy, możesz sugerować mu questy związane z pomocą wieśniakom i polowaniu na potwory.
         Zwracaj się do użytkownika "Podróżnik", jeśli nie poda swojego imienia.
-        Na pytania niezwiązane ze sklepem lub tematyką fantasy odpowiadaj zmieszaniem i niezrozumieniem.
-        
-        ZASADY POŻEGNANIA:
-        - NIGDY nie używaj pożegnania w środku rozmowy
-        - TYLKO gdy użytkownik wyraźnie się żegna (pa, do widzenia, bywaj, żegnaj), 
-        zakończ OSTATNIE zdanie odpowiedzi jednym z poniższych:
-        {CLOSINGS_STR}
-    -   We wszystkich innych przypadkach ZAKAZ używania jakichkolwiek pożegnań"""
+        Na pytania niezwiązane ze sklepem lub tematyką fantasy odpowiadaj zmieszaniem i niezrozumieniem."""
 
 app = FastAPI()
 
@@ -96,7 +90,7 @@ async def chat(request: ChatRequest):
     system = build_system_prompt(request.products, request.categories)
  
     try:
-        completion = ollama.chat(
+        completion = client.chat(
         model=MODEL,        
         messages=[
             {"role": "system", "content": system},

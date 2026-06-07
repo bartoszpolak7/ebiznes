@@ -26,8 +26,10 @@ object AIService {
     }
   }
 
+  private val pythonUrl = System.getenv("PYTHON_SERVICE_URL") ?: "http://localhost:8000"
+
   suspend fun chat(message: String, newConversation: Boolean, products: List<String>, categories: List<String>): PythonChatResponse {
-    return client.post("http://localhost:8000/chat") {
+    return client.post(pythonUrl) {
       contentType(ContentType.Application.Json)
       setBody(
         PythonChatRequest(

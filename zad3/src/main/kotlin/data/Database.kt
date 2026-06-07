@@ -17,7 +17,5 @@ object Database {
         Product(3, "Białe uszy koboldzie posypane parmezanem", 10.99, categoryId = 1),
         Product(3, "Piwo", 5.99, categoryId = 2),
         Product(3, "Wino ze Złotej Przystani", 300.0, categoryId = 2),
-
-
     )
 }

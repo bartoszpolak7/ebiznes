@@ -1,8 +1,6 @@
-# DOCKER COMPOSE NIE DZIAŁA, NIE UŻYWAĆ
-
 services:
   ollama:
-    image: ollama/ollama:latest
+    image: ollama/ollama:0.30.5
     ports:
       - "11434:11434"
   kotlin:
@@ -12,6 +10,7 @@ services:
     environment:
       - DISCORD_BOT_TOKEN=${DISCORD_BOT_TOKEN}
       - DISCORD_WEBHOOK_URL=${DISCORD_WEBHOOK_URL}
+      - PYTHON_SERVICE_URL=http://python:8000
     depends_on:
       - ollama
   python:
@@ -21,3 +20,5 @@ services:
     depends_on:
       - kotlin
       - ollama
+    environment:
+      - OLLAMA_HOST=http://ollama:11434
