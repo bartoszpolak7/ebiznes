@@ -124,3 +124,10 @@ kod klienta: https://github.com/bartoszpolak7/ebiznes/tree/main/zad6/frontend
 
 wideo: https://github.com/bartoszpolak7/ebiznes/blob/main/zad8/Nagrywanie%20ekranu%202026-06-05%20024933%20(720p).mp4
 
+# Zadanie 9 ✅3.0 ✅3.5
+
+wideo: https://github.com/bartoszpolak7/ebiznes/blob/main/zad9/Nagrywanie%20ekranu%202026-06-07%20181759%20(5).mp4
+
+kod serwera (i frontendu) w kotlinie: https://github.com/bartoszpolak7/ebiznes/tree/main/zad3
+
+kod części w Pythonie: https://github.com/bartoszpolak7/ebiznes/tree/main/zad9
