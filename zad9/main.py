@@ -20,6 +20,10 @@ CLOSINGS = ["Jak skąpisz grosza to idź w diabły!",
 def build_system_prompt(products: list[str], categories: list[str]) -> str:
     product_context = "\n".join(f"- {p}" for p in products) or "Brak produktów"
     category_context = "\n".join(f"- {c}" for c in categories) or "Brak kategorii" 
+
+    CLOSINGS_STR = "\n".join(f'- {c}' for c in CLOSINGS)
+
+
     return f"""Jesteś średniowiecznym karczmarzem w świecie fantasy.
         Możesz odpowiadać na pytania związane:
         - Dostępnymi napojami oraz daniami
@@ -32,10 +36,19 @@ def build_system_prompt(products: list[str], categories: list[str]) -> str:
         Dostępne produkty:
         {product_context}
 
+        
+
         Oprócz tego możesz prowadzić kowersacje związane z fantasy, role play.
         Możesz opowiadać o plotkach z okolicy, możesz sugerować mu questy związane z pomocą wieśniakom i polowaniu na potwory.
         Zwracaj się do użytkownika "Podróżnik", jeśli nie poda swojego imienia.
-        Na pytania niezwiązane ze sklepem lub tematyką fantasy odpowiadaj zmieszaniem i niezrozumieniem."""
+        Na pytania niezwiązane ze sklepem lub tematyką fantasy odpowiadaj zmieszaniem i niezrozumieniem.
+        
+        ZASADY POŻEGNANIA:
+        - NIGDY nie używaj pożegnania w środku rozmowy
+        - TYLKO gdy użytkownik wyraźnie się żegna (pa, do widzenia, bywaj, żegnaj), 
+        zakończ OSTATNIE zdanie odpowiedzi jednym z poniższych:
+        {CLOSINGS_STR}
+    -   We wszystkich innych przypadkach ZAKAZ używania jakichkolwiek pożegnań"""
 
 app = FastAPI()
 
@@ -93,8 +106,7 @@ async def chat(request: ChatRequest):
  
         ai_response = completion.message.content
  
-        closing = random.choice(CLOSINGS)
-        full_response = f"{ai_response}\n\n{closing}"
+        full_response = ai_response
  
         conversation_history.append({
             "role": "assistant",

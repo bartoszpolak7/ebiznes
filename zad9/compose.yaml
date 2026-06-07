@@ -1,11 +1,23 @@
+# DOCKER COMPOSE NIE DZIAŁA, NIE UŻYWAĆ
+
 services:
+  ollama:
+    image: ollama/ollama:latest
+    ports:
+      - "11434:11434"
   kotlin:
     build: ../zad3
-
+    ports:
+      - "8080:8080"
+    environment:
+      - DISCORD_BOT_TOKEN=${DISCORD_BOT_TOKEN}
+      - DISCORD_WEBHOOK_URL=${DISCORD_WEBHOOK_URL}
+    depends_on:
+      - ollama
   python:
     build: .
     ports:
       - "8000:8000"
     depends_on:
       - kotlin
-    image: szczuras7/ebiz9-python
+      - ollama

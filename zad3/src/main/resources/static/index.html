@@ -9,7 +9,7 @@
 
 <label for="message">Plotkuj w karczmie:</label>
 <input type="text" id="message" placeholder="Opowiadaj...">
-<button onclick="sendMessage()">Wyślij</button>
+<button id="send" onclick="sendMessage()">Wyślij</button>
 <pre id="config"></pre>
 
 <h3>O co możesz zapytać się karczmarza:</h3>
@@ -27,8 +27,10 @@
 <ul id="messages"></ul>
 
 <script>
+
     async function sendMessage() {
-        const message = document.getElementById("message").value;
+        let input = document.getElementById("message");
+        const message = input.value;
 
         await fetch("/webhook/send", {
             method: "POST",
@@ -38,8 +40,14 @@
             body: JSON.stringify({ message })
         });
 
-        alert("Message sent!");
+        input.value = "";
     }
+
+    document.getElementById("message").addEventListener("keydown", async function(e) {
+        if (e.key === "Enter") {
+            await sendMessage();
+        }
+    });
 
     async function loadMessages() {
         const response = await fetch("/bot/messages");
@@ -56,10 +64,6 @@
         await loadMessages();
         setInterval(loadMessages, 5000);
     });
-
-    document.addEventListener("DOMContentLoaded", async () => {
-        const commands = await fetch()
-    })
 
 </script>
 

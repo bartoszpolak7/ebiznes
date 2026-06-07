@@ -14,7 +14,7 @@ fun main(args: Array<String>) {
 
 fun Application.module() {
 
-    println("TOKENS:\n${System.getenv("DISCORD_BOT_TOKEN")}\n${System.getenv("DISCORD_WEBHOOK_URL")}")
+//    println("TOKENS:\n${System.getenv("DISCORD_BOT_TOKEN")}\n${System.getenv("DISCORD_WEBHOOK_URL")}")
     val botToken = System.getenv("DISCORD_BOT_TOKEN") ?: error("DISCORD_BOT_TOKEN not set")
     BotService.start(botToken)
     configureRouting()

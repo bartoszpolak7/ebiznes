@@ -80,17 +80,14 @@ object BotService {
             content.startsWith("!") -> {
               return event.channel.sendMessage("Nie znaleziono komendy.").queue()
             }
-
-            else -> {
-              messages.add(
-                DiscordMessage(
-                  author = event.author.name,
-                  content = event.message.contentDisplay,
-                  channel = event.channel.name
-                )
-              )
-            }
           }
+          messages.add(
+            DiscordMessage(
+              author = event.author.name,
+              content = event.message.contentDisplay,
+              channel = event.channel.name
+            )
+          )
         }
       })
       .build()
