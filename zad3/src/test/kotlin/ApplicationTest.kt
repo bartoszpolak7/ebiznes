@@ -4,7 +4,6 @@ import io.ktor.client.request.*
 import io.ktor.http.*
 import io.ktor.server.testing.*
 import kotlin.test.*
-import io.github.siemamen7.routing.configureRouting
 
 class ApplicationTest {
     @Test

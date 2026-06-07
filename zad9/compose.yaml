@@ -1,0 +1,11 @@
+services:
+  kotlin:
+    build: ../zad3
+
+  python:
+    build: .
+    ports:
+      - "8000:8000"
+    depends_on:
+      - kotlin
+    image: szczuras7/ebiz9-python

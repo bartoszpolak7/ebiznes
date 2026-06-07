@@ -1,5 +1,8 @@
 package io.github.siemamen7.routing
 
+import io.github.siemamen7.ChatRequest
+import io.github.siemamen7.data.Database
+import io.github.siemamen7.service.AIService
 import io.ktor.server.request.*
 import io.ktor.server.response.*
 import io.ktor.server.routing.*
@@ -33,5 +36,12 @@ fun Route.routes() {
 
     get("/bot/messages") {
         call.respond(BotService.messages)
+    }
+    post("/chat") {
+        val request = call.receive<ChatRequest>()
+        val products = Database.products.map { "${it.name} - ${it.price}" }
+        val categories = Database.categories.map { it.name }
+        val response = AIService.chat(request.message, request.newConversation, products, categories)
+        call.respond(response)
     }
 }

@@ -1,18 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Discord Sender</title>
+    <title>Ostoja na rozwidleniu</title>
 </head>
 <body>
 
-<h2>Send a message to Discord</h2>
+<h2>Gawędź z podróżnikami</h2>
 
-<label for="message">Message:</label>
-<input type="text" id="message" placeholder="Enter message">
-<button onclick="sendMessage()">Send</button>
+<label for="message">Plotkuj w karczmie:</label>
+<input type="text" id="message" placeholder="Opowiadaj...">
+<button onclick="sendMessage()">Wyślij</button>
 <pre id="config"></pre>
 
-<h2>Messages from Discord</h2>
+<h3>O co możesz zapytać się karczmarza:</h3>
+<ul id="commands">
+    <li>!kategorie - jakiego rodzaju towary</li>
+    <li>!kategoria &lt;nazwa&gt; - towary danego rodzaju</li>
+    <li>!czat &lt;wiadomość&gt; - rozmawiaj z karczmarzem</li>
+</ul>
+
+
+<h2>Nowinki zasłuchane w karczmie</h2>
+<div style="display: flex; flex-direction: row; justify-content: center">
+
+</div>
 <ul id="messages"></ul>
 
 <script>
@@ -45,6 +56,11 @@
         await loadMessages();
         setInterval(loadMessages, 5000);
     });
+
+    document.addEventListener("DOMContentLoaded", async () => {
+        const commands = await fetch()
+    })
+
 </script>
 
 </body>
