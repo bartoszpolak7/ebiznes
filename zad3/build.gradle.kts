@@ -12,7 +12,7 @@ plugins {
 
 java {
     toolchain {
-        languageVersion = JavaLanguageVersion.of(21) // change 25 → 21
+        languageVersion = JavaLanguageVersion.of(21)
     }
 }
 
@@ -24,7 +24,16 @@ application {
 }
 
 kotlin {
-    jvmToolchain(25)
+    jvmToolchain(21)
+}
+
+tasks.jar {
+    archiveFileName.set("app.jar")
+    manifest {
+        attributes["Main-Class"] = application.mainClass.get()
+    }
+    from(configurations.runtimeClasspath.get().map { if (it.isDirectory) it else zipTree(it) })
+    duplicatesStrategy = org.gradle.api.file.DuplicatesStrategy.EXCLUDE
 }
 
 dependencies {
