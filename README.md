@@ -7,6 +7,8 @@ https://github.com/bartoszpolak7/ebiznes/tree/main/nagrania
 
 ## Zadanie 1
 
+_commit 3.0-4.5:_ https://github.com/bartoszpolak7/ebiznes/commit/6fe2b9cd4069fd4e933aa7862f8482bc9fccbba9
+
 ✅ 3.0 obraz ubuntu z Pythonem w wersji 3.10
 
 kod: https://github.com/bartoszpolak7/ebiznes/tree/main/zad1-3-0
@@ -35,50 +37,66 @@ obraz: https://hub.docker.com/repository/docker/szczuras7/zad1-4-5/general
 
 ✅ 5.0 dodać konfigurację docker-compose
 
+_commit:_ https://github.com/bartoszpolak7/ebiznes/commit/4a6bdf071b13af758bd350e4b28011f3f3e6bdee
+
 kod: https://github.com/bartoszpolak7/ebiznes/tree/main/zad1-5-0
 
 ## Zadanie 2
+
+Kod tego zadania znajduje się w osobnym module:
+
+https://github.com/bartoszpolak7/ebiz-zad2/tree/e989f05b33f488c5d0dc38419a6298bdcf06f51a
 
 ✅ 3.0 Należy stworzyć kontroler do Produktów (pierwszy commit zawiera już 3.5)
 
 ✅ 3.5 Do kontrolera należy stworzyć endpointy zgodnie z CRUD - dane
 pobierane z listy
 
-commit: https://github.com/siemamen7/ebiz-zad2/commit/14e41d3b99d7b2f2c43c6f4741e7086adfffad12
+_commit:_ https://github.com/bartoszpolak7/ebiz-zad2/commit/14e41d3b99d7b2f2c43c6f4741e7086adfffad12
 
 ✅ 4.0 Należy stworzyć kontrolery do Kategorii oraz Koszyka + endpointy
 zgodnie z CRUD
 
-commit: https://github.com/siemamen7/ebiz-zad2/commit/8c681f549293bb42e87b4de127e7230bf3670190
+_commit:_ https://github.com/bartoszpolak7/ebiz-zad2/commit/8c681f549293bb42e87b4de127e7230bf3670190
 
 ✅ 4.5 Należy aplikację uruchomić na dockerze (stworzyć obraz) oraz dodać
 skrypt uruchamiający aplikację via ngrok
 
-commit: https://github.com/siemamen7/ebiz-zad2/commit/ce0b42c858b741f004c7fda3f045a31fc631a1ec
+_commit:_ https://github.com/bartoszpolak7/ebiz-zad2/commit/ce0b42c858b741f004c7fda3f045a31fc631a1ec
 
 obraz: https://hub.docker.com/repository/docker/szczuras7/ebiz-zad2/general
 
 ✅ 5.0 Należy dodać konfigurację CORS dla dwóch hostów dla metod CRUD
 
-commit: https://github.com/siemamen7/ebiz-zad2/commit/c96ead9c9e46b0213642ad5f7ac9eb81f580768f
+_commit:_ https://github.com/bartoszpolak7/ebiz-zad2/commit/c96ead9c9e46b0213642ad5f7ac9eb81f580768f
 
 ## Zadanie 3
 
+kod: https://github.com/bartoszpolak7/ebiznes/tree/main/zad3
+
+obraz: https://hub.docker.com/repository/docker/szczuras7/ebiz3/general
+
 ✅ 3.0 Należy stworzyć aplikację kliencką w Kotlinie we frameworku Ktor, która pozwala na przesyłanie wiadomości na platformę Discord
 
+_commit:_ https://github.com/bartoszpolak7/ebiznes/commit/4c8c5455fc794bcf4721a399dd9ebe51d8df11de
+
 ✅ 3.5 Aplikacja jest w stanie odbierać wiadomości użytkowników z platformy Discord skierowane do aplikacji (bota)
+
+_commit:_ https://github.com/bartoszpolak7/ebiznes/commit/5122c7b2032d696c3abade4a835cf1b81c77657c
 
 ✅ 4.0 Zwróci listę kategorii na określone żądanie użytkownika
 
 ✅ 4.5 Zwróci listę produktów wg żądanej kategorii
 
+_commit 4.0-4.5:_ https://github.com/bartoszpolak7/ebiznes/commit/0bd626bc44a70a25c8aab4ccceea3074be90ee47
+
 ❌ 5.0 Aplikacja obsłuży dodatkowo jedną z platform: Slack lub Messenger
 
-kod: https://github.com/siemamen7/ebiznes/tree/main/zad3
-
-obraz: https://hub.docker.com/repository/docker/szczuras7/ebiz3/general
-
 ## Zadanie 4
+
+kod: https://github.com/bartoszpolak7/ebiznes/tree/main/zad4
+
+_commit 3.0-4.5:_ https://github.com/bartoszpolak7/ebiznes/commit/564de094695eb6b43b803f353589ec49f3bfaf6a
 
 ✅ 3.0 Należy stworzyć aplikację we frameworki echo w j. Go, która będzie
 miała kontroler Produktów zgodny z CRUD
@@ -94,9 +112,11 @@ a produktem
 
 ❌ 5.0 pogrupować zapytania w gorm’owe scope'y
 
-kod: https://github.com/siemamen7/ebiznes/tree/main/zad4
-
 ## Zadanie 5
+
+kod: https://github.com/bartoszpolak7/ebiznes/tree/main/zad5
+
+_commit 3.0-5.0:_ https://github.com/bartoszpolak7/ebiznes/commit/d739b07ff438b6899dd3ff022f308436f714252c
 
 ✅3.0 W ramach projektu należy stworzyć dwa komponenty: Produkty oraz
 Płatności; Płatności powinny wysyłać do aplikacji serwerowej dane, a w
@@ -113,9 +133,11 @@ kliencką na dockerze via docker-compose
 
 ✅5.0 Należy wykorzystać axios’a oraz dodać nagłówki pod CORS
 
-kod: https://github.com/bartoszpolak7/ebiznes/tree/main/zad5
-
 ## Zadanie 6
+
+kod: https://github.com/bartoszpolak7/ebiznes/tree/main/zad6
+
+_commit:_ https://github.com/bartoszpolak7/ebiznes/commit/881a5580430e26f6c968307041c36884ddb1d5cb
 
 ✅3.0 Należy stworzyć 20 przypadków testowych w CypressJS lub Selenium
 (Kotlin, Python, Java, JS, Go, Scala)
@@ -131,11 +153,15 @@ minimum jednym scenariuszem negatywnym per endpoint
 
 ✅5.0 Należy uruchomić testy funkcjonalne na Browserstacku
 
-kod: https://github.com/bartoszpolak7/ebiznes/tree/main/zad6
-
 ## Zadanie 7
 
-✅ 3.0 Należy dodać litera do odpowiedniego kodu aplikacji serwerowej w
+kod serwera: https://github.com/bartoszpolak7/ebiz-zad7-server/tree/8b2639d8edefe617f781e6c618b6b8cacafc9f5e
+
+kod klienta: https://github.com/bartoszpolak7/ebiz-zad7-client/tree/c9c23adc2120f3861da90f04d267c87019e9eafe
+
+_commit 3.0-5.0:_ https://github.com/bartoszpolak7/ebiznes/commit/3be9dfe1d30d8cb596b4b2a2ef0192f144e6ec12
+
+✅ 3.0 Należy dodać lintera do odpowiedniego kodu aplikacji serwerowej w
 hookach gita
 
 ✅ 3.5 Należy wyeliminować wszystkie bugi w kodzie w Sonarze (kod
@@ -150,11 +176,13 @@ w kodzie w Sonarze (kod aplikacji serwerowej)
 ✅ 5.0 Należy wyeliminować wszystkie błędy oraz zapaszki w kodzie
 aplikacji klienckiej
 
-kod serwera: https://github.com/bartoszpolak7/ebiz-zad7-server/tree/8b2639d8edefe617f781e6c618b6b8cacafc9f5e
-
-kod klienta: https://github.com/bartoszpolak7/ebiz-zad7-client/tree/c9c23adc2120f3861da90f04d267c87019e9eafe
-
 ## Zadanie 8
+
+kod serwera: https://github.com/bartoszpolak7/ebiznes/tree/main/zad6/backend
+
+kod klienta: https://github.com/bartoszpolak7/ebiznes/tree/main/zad6/frontend
+
+_commit 3.0-5.0:_ https://github.com/bartoszpolak7/ebiznes/commit/2216e559cc46c0bbdec0c24e831f08999533cf9f
 
 ✅ 3.0 logowanie przez aplikację serwerową (bez Oauth2)
 
@@ -166,11 +194,13 @@ kod klienta: https://github.com/bartoszpolak7/ebiz-zad7-client/tree/c9c23adc2120
 
 ✅ 5.0 zapisywanie danych logowania OAuth2 po stronie serwera
 
-kod serwera: https://github.com/bartoszpolak7/ebiznes/tree/main/zad6/backend
-
-kod klienta: https://github.com/bartoszpolak7/ebiznes/tree/main/zad6/frontend
-
 ## Zadanie 9
+
+kod serwera (i frontendu) w kotlinie: https://github.com/bartoszpolak7/ebiznes/tree/main/zad3
+
+kod części w Pythonie: https://github.com/bartoszpolak7/ebiznes/tree/main/zad9
+
+_commit 3.0-3.5:_ https://github.com/bartoszpolak7/ebiznes/commit/0beebbf875f14d90079c2f56b87a3e2738a222cf
 
 ✅ 3.0 należy stworzyć po stronie serwerowej osobny serwis do łącznia z
 chatGPT
@@ -185,11 +215,11 @@ ograniczenie się jedynie do ubrań oraz samego sklepu) do GPT
 
 ❌ 5.0 filtrowanie odpowiedzi po sentymencie
 
-kod serwera (i frontendu) w kotlinie: https://github.com/bartoszpolak7/ebiznes/tree/main/zad3
-
-kod części w Pythonie: https://github.com/bartoszpolak7/ebiznes/tree/main/zad9
-
 ## Zadanie 10
+
+TYLKO WIDEO
+
+_commit:_ https://github.com/bartoszpolak7/ebiznes/commit/e07ae7f6353f7b822e6108df6dc26c41994ea465
 
 ✅ 3.0 Należy stworzyć odpowiednie instancje po stronie chmury na
 dockerze
@@ -204,5 +234,3 @@ sobą rozmawiają)
 
 ❌ 5.0 Dodać uruchomienie regresyjnych testów automatycznych
 (funkcjonalnych) jako krok w Actions w Browserstacku
-
-TYLKO WIDEO
