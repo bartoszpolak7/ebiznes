@@ -1,44 +1,47 @@
 # Ebiznes 2026
+
 Repozytorium z zadaniami.
 Wszystkie nagrania znajdują się w folderze 'nagrania'.
 
 https://github.com/bartoszpolak7/ebiznes/tree/main/nagrania
 
 ## Zadanie 1
+
 ✅ 3.0 obraz ubuntu z Pythonem w wersji 3.10
 
-kod: https://github.com/siemamen7/ebiznes/tree/main/zad1-3-0
+kod: https://github.com/bartoszpolak7/ebiznes/tree/main/zad1-3-0
 
 obraz: https://hub.docker.com/repository/docker/szczuras7/zad1-3-0/general
 
 ✅ 3.5 obraz ubuntu:24.02 z Javą w wersji 8 oraz Kotlinem
 
-kod: https://github.com/siemamen7/ebiznes/tree/main/zad1-3-5
+kod: https://github.com/bartoszpolak7/ebiznes/tree/main/zad1-3-5
 
 obraz: https://hub.docker.com/repository/docker/szczuras7/zad1-3-5/general
 
 ✅ 4.0 do powyższego należy dodać najnowszego Gradle’a oraz paczkę JDBC
 SQLite w ramach projektu na Gradle (build.gradle)
 
-kod: https://github.com/siemamen7/ebiznes/tree/main/zad1-4-0
+kod: https://github.com/bartoszpolak7/ebiznes/tree/main/zad1-4-0
 
 obraz: https://hub.docker.com/repository/docker/szczuras7/zad1-4-0/general
 
 ✅ 4.5 stworzyć przykład typu HelloWorld oraz uruchomienie aplikacji
 przez CMD oraz gradle
 
-kod: https://github.com/siemamen7/ebiznes/tree/main/zad1-4-5
+kod: https://github.com/bartoszpolak7/ebiznes/tree/main/zad1-4-5
 
 obraz: https://hub.docker.com/repository/docker/szczuras7/zad1-4-5/general
 
 ✅ 5.0 dodać konfigurację docker-compose
 
-kod: https://github.com/siemamen7/ebiznes/tree/main/zad1-5-0
+kod: https://github.com/bartoszpolak7/ebiznes/tree/main/zad1-5-0
 
 ## Zadanie 2
 
-✅ 3.0 Należy stworzyć kontroler do Produktów
-+ ✅ 3.5 Do kontrolera należy stworzyć endpointy zgodnie z CRUD - dane
+✅ 3.0 Należy stworzyć kontroler do Produktów (pierwszy commit zawiera już 3.5)
+
+✅ 3.5 Do kontrolera należy stworzyć endpointy zgodnie z CRUD - dane
 pobierane z listy
 
 commit: https://github.com/siemamen7/ebiz-zad2/commit/14e41d3b99d7b2f2c43c6f4741e7086adfffad12
@@ -75,8 +78,8 @@ kod: https://github.com/siemamen7/ebiznes/tree/main/zad3
 
 obraz: https://hub.docker.com/repository/docker/szczuras7/ebiz3/general
 
-
 ## Zadanie 4
+
 ✅ 3.0 Należy stworzyć aplikację we frameworki echo w j. Go, która będzie
 miała kontroler Produktów zgodny z CRUD
 
@@ -89,11 +92,12 @@ listy)
 ✅ 4.5 Należy stworzyć model kategorii i dodać relację między kategorią,
 a produktem
 
-✅ 5.0 pogrupować zapytania w gorm’owe scope'y
+❌ 5.0 pogrupować zapytania w gorm’owe scope'y
 
 kod: https://github.com/siemamen7/ebiznes/tree/main/zad4
 
 ## Zadanie 5
+
 ✅3.0 W ramach projektu należy stworzyć dwa komponenty: Produkty oraz
 Płatności; Płatności powinny wysyłać do aplikacji serwerowej dane, a w
 Produktach powinniśmy pobierać dane o produktach z aplikacji
@@ -112,6 +116,7 @@ kliencką na dockerze via docker-compose
 kod: https://github.com/bartoszpolak7/ebiznes/tree/main/zad5
 
 ## Zadanie 6
+
 ✅3.0 Należy stworzyć 20 przypadków testowych w CypressJS lub Selenium
 (Kotlin, Python, Java, JS, Go, Scala)
 
@@ -150,6 +155,7 @@ kod serwera: https://github.com/bartoszpolak7/ebiz-zad7-server/tree/8b2639d8edef
 kod klienta: https://github.com/bartoszpolak7/ebiz-zad7-client/tree/c9c23adc2120f3861da90f04d267c87019e9eafe
 
 ## Zadanie 8
+
 ✅ 3.0 logowanie przez aplikację serwerową (bez Oauth2)
 
 ✅ 3.5 rejestracja przez aplikację serwerową (bez Oauth2)
@@ -165,6 +171,7 @@ kod serwera: https://github.com/bartoszpolak7/ebiznes/tree/main/zad6/backend
 kod klienta: https://github.com/bartoszpolak7/ebiznes/tree/main/zad6/frontend
 
 ## Zadanie 9
+
 ✅ 3.0 należy stworzyć po stronie serwerowej osobny serwis do łącznia z
 chatGPT
 
@@ -183,6 +190,7 @@ kod serwera (i frontendu) w kotlinie: https://github.com/bartoszpolak7/ebiznes/t
 kod części w Pythonie: https://github.com/bartoszpolak7/ebiznes/tree/main/zad9
 
 ## Zadanie 10
+
 ✅ 3.0 Należy stworzyć odpowiednie instancje po stronie chmury na
 dockerze
 
